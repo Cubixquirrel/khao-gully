@@ -1,0 +1,86 @@
+body {
+    padding: 0 10px;
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    background: #fefefe;
+}
+
+h1, h2, p, span {
+    margin: 0;
+    padding: 0;
+}
+
+.need-help-header {
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.need-help-header i {
+    font-size: 20px;
+}
+
+.need-help-title span {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.need-help-title {
+    margin-bottom: 15px;
+}
+
+input.help-input {
+    background: rgba(0, 0, 0, 0);
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+    color: #444444;
+    font-size: 14px;
+    padding: 10px;
+    font-family: 'Montserrat', sans-serif;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    outline: none !important;
+}
+
+.need-help-footer {
+    position: fixed;
+    width: 100%;
+    box-sizing: border-box;
+    left: 0;
+    bottom: 0;
+    padding: 0 10px;
+}
+
+.need-help-footer > span:first-child {
+    font-size: 14px;
+    display: block;    
+    margin-top: 15px;
+}
+
+.need-help-footer span:first-child span{
+    color: #F44336;
+}
+
+input.help-button {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    padding: 15px;
+    outline: none !important;
+    border-radius: 3px;
+    border: 0;
+    background: #dddddd;
+    color: #999999;
+    transition: all 0.05s ease 0s;
+    margin: 20px 0;
+}

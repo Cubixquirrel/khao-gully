@@ -1,0 +1,91 @@
+body {
+    padding: 0 10px;
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    background: #fefefe;
+}
+
+h1, h2, p, span {
+    margin: 0;
+    padding: 0;
+}
+
+.send-feedback-header {
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.send-feedback-header i {
+    font-size: 20px;
+}
+
+.send-feedback-title span:first-child {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.send-feedback-title {
+    margin-bottom: 15px;
+}
+
+.send-feedback-title span:last-child {
+    font-size: 14px;
+    display: block;
+}
+
+input.feedback-input {
+    background: rgba(0, 0, 0, 0);
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+    color: #444444;
+    font-size: 14px;
+    padding: 10px;
+    font-family: 'Montserrat', sans-serif;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    outline: none !important;
+}
+
+.send-feedback-footer {
+    position: fixed;
+    width: 100%;
+    box-sizing: border-box;
+    left: 0;
+    bottom: 0;
+    padding: 0 10px;
+}
+
+.send-feedback-footer > span:first-child {
+    font-size: 14px;
+    display: block;    
+    margin-top: 15px;
+}
+
+.send-feedback-footer span:first-child span{
+    color: #F44336;
+}
+
+input.feedback-button {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    padding: 15px;
+    outline: none !important;
+    border-radius: 3px;
+    border: 0;
+    background: #dddddd;
+    color: #999999;
+    transition: all 0.05s ease 0s;
+    margin: 20px 0;
+}

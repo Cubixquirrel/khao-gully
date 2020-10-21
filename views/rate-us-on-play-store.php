@@ -1,0 +1,1 @@
+<?php header ('location: market://details?id=com.google.android.youtube') ?>

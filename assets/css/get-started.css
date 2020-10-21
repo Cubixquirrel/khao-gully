@@ -1,0 +1,273 @@
+/* html {
+    overflow: hidden;
+} */
+
+body {
+    padding: 10px;
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
+    background: #fefefe;
+}
+
+h1, h2, p, span {
+    margin: 0;
+    padding: 0;
+}
+
+#main-box, #otp-box, #personal-box {
+    height: 100%;
+    overflow-y: auto;
+}
+
+#main-box {
+    position: absolute;
+    width: 100%;
+    box-sizing: border-box;
+    left: 0;
+    top: 0;
+    padding: 10px 20px;
+    background: #fefefe;
+    height: 100%;
+    transition: all 0.25s ease 0s;
+}
+
+.heading-group {
+    padding: 35px 0px;
+    text-align: center;
+    display: block;
+    box-sizing: border-box;
+    padding-top: 25px;
+}
+
+.heading-group .title {
+    font-size: 20px;
+    font-weight: 400;
+    color: #000000;
+}
+
+.heading-group .sub-title {
+    font-size: 14px;
+    font-weight: 400;
+    color: #0f0f0f;
+    margin-top: 30px;
+}
+
+.form-group {
+    padding: 0 10px;
+}
+
+.label {
+    font-size: 12px;
+    color: #0f0f0f;
+}
+
+.input-group {
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.input-group img {
+    margin-bottom: 5px;
+}
+
+.input-control-group {
+    width: 100%;
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
+}
+
+.input-control-group span {
+    font-size: 16px;
+    color: #000000;
+    font-weight: 400;
+    padding: 5px;
+    margin-bottom: 3px;
+}
+
+.input-control-group input {
+    width: 100%;
+    font-size: 16px;
+    border: 0;
+    border-bottom: 1px solid #999999;
+    padding: 5px 0;
+    border-radius: 0;
+    outline: none !important;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.button {
+    margin-top: 20px;
+}
+
+.button input {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    padding: 15px;
+    outline: none !important;
+    border-radius: 3px;
+    border: 0;
+    background: #dddddd;
+    color: #999999;
+    transition: all 0.05s ease 0s;
+}
+
+.button.map-button.secondary input {
+    background: rgb(0 0 0 / 0%);
+    color: rgb(0 0 0);
+    border: 1px solid rgb(153 153 153);
+}
+
+.terms-group {
+    margin-top: 30px;
+    padding: 10px;
+    text-align: center;
+}
+
+.terms-group .line-1 {
+    font-size: 13px;
+    display: block;
+    color: #0f0f0f;
+    margin-bottom: 5px;
+}
+
+.terms-group .line-2 {
+    font-size: 13px;
+    display: block;
+}
+
+.terms-group .line-2 a {
+    color: #0f0f0f;
+    margin: 0 2px;
+    border-bottom: 1px solid #0f0f0f;
+}
+
+#otp-box {
+    position: absolute;
+    width: 100%;
+    box-sizing: border-box;
+    left: 0;
+    top: 0;
+    padding: 10px 20px;
+    background: #fefefe;
+    height: 100%;
+    transform: translateY(120%);
+    transition: all 0.25s ease 0s;
+}
+
+#otp-box .title-group {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+
+#otp-box .title-group i {
+    margin-right: 15px;
+}
+
+#personal-box {
+    position: absolute;
+    width: 100%;
+    box-sizing: border-box;
+    left: 0;
+    top: 0;
+    padding: 10px 20px;
+    background: #fefefe;
+    height: 100%;
+    transform: translateY(120%);
+    transition: all 0.25s ease 0s;
+    z-index: 1;
+}
+
+#otp {
+    text-align: center;
+}
+
+.resend-group {
+    margin-top: 30px;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.resend-group span {
+    font-size: 14px;
+    margin-right: 5px;
+    color: #000000;
+}
+
+input#resend-button {
+    background: transparent;
+    border: 0;
+    font-size: 14px;
+    padding: 0;
+    margin: 0;
+    outline: none !important;
+    font-family: 'Montserrat', sans-serif;
+    color: #666666;
+}
+
+.mt-25 {
+    margin-top: 15px;
+}
+
+.pb-10 {
+    padding-bottom: 10px;
+}
+
+.map-container {
+    display: none;
+}
+
+.map-container.active {
+    display: block;
+    z-index: 999;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.map.active {
+    height: 80%;
+    position: relative;
+    overflow: hidden;
+}
+
+.open-map-button {
+    width: 100%;
+    font-size: 16px !important;
+    border: 0;
+    border-bottom: 1px solid rgb(153 153 153);
+    padding: 5px 0 !important;
+}
+
+.button.map-button {
+    position: relative;
+    height: 10%;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 0;
+}
+
+.button.map-button input {
+    background: rgb(0, 150, 136);
+    color: rgb(254, 254, 254);
+}
